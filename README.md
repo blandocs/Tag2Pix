@@ -240,4 +240,4 @@ The code is heavliy refactored after the submission, the exact preprocessing and
 
 Training / Testing codes are distributed under MIT License.
 
-Every learned weight, network dump in the release channel (`model.pth, tag2pix_256.pkl, tag2pix_512.pkl`) is available for non-commercial purpose. Any redistribution is explicitly restricted.
+Every learned weight, network dump in the release channel (`model.pth, tag2pix_512.pkl`) is available for non-commercial purpose. Any redistribution is explicitly restricted.

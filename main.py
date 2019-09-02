@@ -8,7 +8,7 @@ import torch
 from tag2pix import tag2pix
 
 DATASET_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'dataset')
-TAG_FILE_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'dataset', 'tag_dump.pkl')
+TAG_FILE_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'loader', 'tag_dump.pkl')
 PRETRAIN_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'model.pth')
 
 def parse_args():

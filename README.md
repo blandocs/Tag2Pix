@@ -16,7 +16,8 @@ This repository is the official PyTorch implementation of [Tag2Pix](http://arxiv
 ## Prerequisite
  * pytorch >= 1.0.1
  * torchvision >= 0.2.2
- * numpy/scipy
+ * numpy
+ * scipy < 1.2.0
  * python-opencv
  * scikit-image
  * Pillow (PIL)

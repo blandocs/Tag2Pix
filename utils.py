@@ -2,7 +2,6 @@ import os, gzip, torch
 import torch.nn as nn
 import torch.nn.init as init
 import numpy as np
-import scipy.misc
 import imageio
 import matplotlib as mpl
 # mpl.use('Agg')  # or whatever other backend that you want
@@ -10,9 +9,10 @@ import matplotlib.pyplot as plt
 from torchvision import datasets, transforms
 
 
-def save_images(images, size, path):
-    image = np.squeeze(merge(images, size))
-    return scipy.misc.imsave(path, image)
+image = np.squeeze(merge(images, size))
+    if np.max(image) <= 1.0:
+        image *= 255
+    return imageio.imwrite(path, image.astype(np.uint8))
 
 def merge(images, size):
     h, w = images.shape[1], images.shape[2]

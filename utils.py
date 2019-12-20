@@ -8,8 +8,8 @@ import matplotlib as mpl
 import matplotlib.pyplot as plt
 from torchvision import datasets, transforms
 
-
-image = np.squeeze(merge(images, size))
+def save_images(images, size, path):
+    image = np.squeeze(merge(images, size))
     if np.max(image) <= 1.0:
         image *= 255
     return imageio.imwrite(path, image.astype(np.uint8))
